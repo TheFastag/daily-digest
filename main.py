@@ -547,6 +547,30 @@ def main():
             first_art["is_top_story"] = True
             first_art["top_story_reason"] = top_story_info.get("motivo", "Nota de mayor trascendencia de la jornada.")
 
+    # 2.1 Construcción del "Top Noticias del Día" (la mejor nota de cada categoría)
+    top_stories = []
+    category_order = ["ultimo_minuto", "tecnologia", "economia", "sociedad", "local", "cultura_general"]
+    for cat_key in category_order:
+        cat_data = processed_categories.get(cat_key)
+        if not cat_data or not cat_data.get("articles"):
+            continue
+        articles = cat_data["articles"]
+        # Buscar la nota marcada como is_category_top, o la primera por defecto
+        top_art = next((a for a in articles if a.get("is_category_top")), articles[0])
+        top_art["is_category_top"] = True
+        if not top_art.get("category_top_reason"):
+            top_art["category_top_reason"] = "Nota de mayor impacto en la categoría."
+
+        cat_meta = CATEGORY_META.get(cat_key, {})
+        top_stories.append({
+            "category_id": cat_key,
+            "category_title": cat_data.get("title", cat_meta.get("title", cat_key)),
+            "category_icon": cat_data.get("icon", cat_meta.get("icon", "📰")),
+            "category_color": cat_meta.get("color", "#6366f1"),
+            "article": top_art
+        })
+    print(f"-> Top Noticias del Día generadas: {len(top_stories)} categorías destacadas.", flush=True)
+
     # 3. Resolución de imágenes
     print("\n-> 3. Optimizando imágenes para notas seleccionadas...", flush=True)
     for cat_data in processed_categories.values():
@@ -566,6 +590,7 @@ def main():
         "date_iso": today_iso,
         "total_articles": total_articles,
         "categories": processed_categories,
+        "top_stories": top_stories,
         "is_archive": False,
         "archive_url": "archive/index.html",
         "home_url": "index.html"

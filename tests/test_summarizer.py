@@ -116,5 +116,26 @@ class TestSummarizer(unittest.TestCase):
                 self.assertEqual(res[1]["summary_source"], "fallback")
 
 
+
+    def test_category_picks_noticia_destacada(self):
+        """Verifica que una categoría seleccione y asigne su noticia destacada."""
+        cache = {}
+        mock_response = {
+            "resumenes": [
+                {"id": "0", "resumen": "Resumen nota uno."},
+                {"id": "1", "resumen": "Resumen nota dos."}
+            ],
+            "noticia_destacada": {
+                "id": "1",
+                "motivo": "Es el lanzamiento científico más esperado del año."
+            }
+        }
+        with patch("summarizer.get_gemini_client") as mock_client:
+            mock_client.return_value = MagicMock()
+            with patch("summarizer.call_gemini_batch", return_value=mock_response):
+                res, _ = summarizer.summarize_category_batch("cultura_general", self.sample_articles, cache)
+                self.assertTrue(res[1].get("is_category_top"))
+                self.assertIn("lanzamiento científico", res[1].get("category_top_reason", ""))
+
 if __name__ == "__main__":
     unittest.main()

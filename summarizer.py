@@ -229,16 +229,18 @@ def summarize_category_batch(
             })
 
         if category_id == "ultimo_minuto":
-            # Incluir la selección de la noticia más importante del día
             system_instructions = (
-                "Eres un editor periodístico jefe. Tienes dos responsabilidades:\n"
+                "Eres un editor periodístico jefe. Tienes tres responsabilidades:\n"
                 "1. Para cada noticia en 'noticias_a_resumir', redacta un resumen conciso de exactamente 2 a 3 frases en español, "
                 "claro, neutral y objetivo. No inventes hechos ni agregues datos que no estén en el texto provisto.\n"
-                "2. Analiza todas las noticias del día (tanto las notas de Último Minuto como los titulares del resto de categorías) "
-                "y selecciona cuál es la NOTICIA MÁS IMPORTANTE DEL DÍA a nivel global o nacional. Explica en 1 frase el motivo.\n"
+                "2. De las noticias en 'noticias_a_resumir', selecciona la NOTICIA DESTACADA ('noticia_destacada') de la sección Último Minuto "
+                "(la de mayor urgencia o impacto), indicando su ID y explicando en 1 frase el motivo.\n"
+                "3. Analiza todas las noticias del día (tanto las notas de Último Minuto como los titulares del resto de categorías) "
+                "y selecciona cuál es la NOTICIA MÁS IMPORTANTE DEL DÍA a nivel global o nacional ('noticia_mas_importante'). Explica en 1 frase el motivo.\n"
                 "Responde en formato JSON con la siguiente estructura exacta:\n"
                 "{\n"
                 '  "resumenes": [{"id": "0", "resumen": "..."}],\n'
+                '  "noticia_destacada": {"id": "0", "motivo": "..."},\n'
                 '  "noticia_mas_importante": {"titulo": "...", "categoria": "...", "motivo": "..."}\n'
                 "}"
             )
@@ -250,11 +252,15 @@ def summarize_category_batch(
         else:
             system_instructions = (
                 f"Eres un redactor periodístico profesional para la sección de {category_id.upper()}. "
-                "Para cada una de las noticias en la lista, genera un resumen de 2 a 3 frases en español. "
+                "Tienes dos responsabilidades:\n"
+                "1. Para cada una de las noticias en la lista 'noticias_a_resumir', genera un resumen de 2 a 3 frases en español. "
                 "El tono debe ser objetivo, informativo y neutral. No inventes datos que no aparezcan en el texto provisto.\n"
+                "2. Selecciona cuál es la NOTICIA DESTACADA ('noticia_destacada') de esta categoría (la de mayor impacto o relevancia para el lector), "
+                "indicando su ID y explicando en 1 frase breve el motivo de su impacto.\n"
                 "Responde estrictamente en formato JSON con la siguiente estructura:\n"
                 "{\n"
-                '  "resumenes": [{"id": "0", "resumen": "..."}]\n'
+                '  "resumenes": [{"id": "0", "resumen": "..."}],\n'
+                '  "noticia_destacada": {"id": "0", "motivo": "..."}\n'
                 "}"
             )
             full_prompt = {
@@ -288,9 +294,21 @@ def summarize_category_batch(
                     fallback_count += 1
                     print(f"  [Fallback RSS (sin ID devuelta)] '{item['title'][:45]}...'", flush=True)
 
+            # Identificar noticia destacada de la categoría
+            destacada_obj = resp_json.get("noticia_destacada")
+            if destacada_obj and isinstance(destacada_obj, dict) and "id" in destacada_obj:
+                dest_id = str(destacada_obj.get("id"))
+                dest_reason = destacada_obj.get("motivo", "Nota de mayor impacto en la categoría.")
+                for orig_idx, item in pending_articles:
+                    if str(orig_idx) == dest_id:
+                        item["is_category_top"] = True
+                        item["category_top_reason"] = dest_reason
+                        print(f"  [Top Categoría] '{item['title'][:45]}...': {dest_reason}", flush=True)
+                        break
+
             if category_id == "ultimo_minuto" and "noticia_mas_importante" in resp_json:
                 top_story_data = resp_json["noticia_mas_importante"]
-                print(f"  [* Noticia del Día] {top_story_data.get('titulo')}: {top_story_data.get('motivo')}", flush=True)
+                print(f"  [* Noticia del Día Global] {top_story_data.get('titulo')}: {top_story_data.get('motivo')}", flush=True)
 
             save_cache(cache_data)
         else:
@@ -300,6 +318,12 @@ def summarize_category_batch(
                 item["summary"] = summarize_rss_fallback(item.get("raw_summary", ""))
                 item["summary_source"] = "fallback"
                 fallback_count += 1
+
+    # Garantizar que toda categoría tenga una noticia destacada asignada para el Top del Día
+    if articles and not any(a.get("is_category_top") for a in articles):
+        articles[0]["is_category_top"] = True
+        if not articles[0].get("category_top_reason"):
+            articles[0]["category_top_reason"] = "Nota de mayor impacto seleccionada hoy en esta categoría."
 
     # Log resumen de la categoría
     total = len(articles)

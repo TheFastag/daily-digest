@@ -625,6 +625,312 @@
     footer p {
       margin-bottom: 0.5rem;
     }
+
+    /* ==========================================
+       ESTILOS TOP NOTICIAS DEL DÍA
+       ========================================== */
+    .top-nav-pill {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(99, 102, 241, 0.22)) !important;
+      border-color: rgba(245, 158, 11, 0.45) !important;
+      color: #fef08a !important;
+      font-weight: 700 !important;
+    }
+    .top-nav-pill:hover {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(99, 102, 241, 0.35)) !important;
+      border-color: rgba(245, 158, 11, 0.7) !important;
+      color: #ffffff !important;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    }
+    .top-nav-star {
+      margin-right: 0.25rem;
+    }
+
+    .top-digest-section {
+      background: linear-gradient(145deg, rgba(26, 35, 58, 0.82), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 2rem 2.75rem;
+      margin-bottom: 4rem;
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.6), 0 0 35px -10px rgba(99, 102, 241, 0.25);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .top-digest-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #f43f5e, #6366f1, #06b6d4, #10b981, #f59e0b, #8b5cf6);
+    }
+
+    .top-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .top-header-left {
+      max-width: 780px;
+    }
+
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: var(--radius-full);
+      margin-bottom: 0.75rem;
+    }
+
+    .top-section-title {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #ffffff, #f1f5f9, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .top-section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .top-counter-badge {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.6rem 1.1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 90px;
+    }
+    .top-counter-badge .count-num {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      line-height: 1;
+    }
+    .top-counter-badge .count-lbl {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-top: 0.2rem;
+    }
+
+    .top-stories-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 680px) {
+      .top-stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1080px) {
+      .top-stories-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .top-card {
+      background: rgba(18, 26, 44, 0.85);
+      border: 1px solid var(--border-subtle);
+      border-top: 3.5px solid var(--cat-color, #6366f1);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.25s ease;
+    }
+    .top-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px -5px rgba(99, 102, 241, 0.3);
+      border-color: rgba(99, 102, 241, 0.4);
+      background: rgba(24, 34, 58, 0.95);
+    }
+
+    .top-card-media {
+      position: relative;
+      width: 100%;
+      height: 175px;
+      overflow: hidden;
+      background: var(--bg-surface);
+    }
+    .top-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .top-card:hover .top-card-img {
+      transform: scale(1.05);
+    }
+
+    .top-cat-tag {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-left: 3px solid var(--cat-color, #6366f1);
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #f8fafc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .top-cat-icon {
+      font-size: 0.85rem;
+    }
+
+    .top-hero-tag {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #0f172a;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.5);
+    }
+
+    .top-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .top-impact-badge {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 3px solid #f59e0b;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      color: #fde68a;
+      line-height: 1.45;
+      margin-bottom: 0.85rem;
+    }
+    .top-impact-badge svg {
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      color: #f59e0b;
+    }
+
+    .top-card-title {
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.015em;
+    }
+    .top-card-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .top-card-title a:hover {
+      color: #818cf8;
+    }
+
+    .top-card-summary {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .top-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.9rem;
+      margin-top: auto;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .top-card-meta {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .top-source {
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .top-bullet {
+      color: var(--text-muted);
+    }
+
+    .top-card-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-top-jump {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 0.4rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+    }
+    .btn-top-jump:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.08);
+    }
   </style>
 </head>
 <body>
@@ -678,6 +984,11 @@
 
       <!-- Barra de navegación por categorías -->
       <nav class="category-nav" aria-label="Navegación de secciones">
+        {% if top_stories %}
+          <a href="#top-del-dia" class="nav-pill top-nav-pill">
+            <span class="top-nav-star">⭐</span> Top del Día ({{ top_stories|length }})
+          </a>
+        {% endif %}
         {% for cat_id, cat in categories.items() %}
           {% if cat.articles %}
             <a href="#cat-{{ cat_id }}" class="nav-pill {% if cat_id == 'ultimo_minuto' %}pulse-pill{% endif %}">
@@ -692,6 +1003,80 @@
 
   <main>
     <div class="container">
+      {% if top_stories %}
+      <!-- Sección Top Noticias del Día (Destacadas por Categoría) -->
+      <section id="top-del-dia" class="top-digest-section">
+        <div class="top-section-header">
+          <div class="top-header-left">
+            <div class="top-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+              <span>Lectura Express • 2 min</span>
+            </div>
+            <h2 class="top-section-title">⚡ Top Noticias del Día</h2>
+            <p class="top-section-subtitle">
+              ¿Poco tiempo? Aquí tienes la noticia de mayor impacto de cada categoría para enterarte de lo esencial en 2 minutos.
+            </p>
+          </div>
+          <div class="top-counter-badge">
+            <span class="count-num">{{ top_stories|length }}</span>
+            <span class="count-lbl">categorías</span>
+          </div>
+        </div>
+
+        <div class="top-stories-grid">
+          {% for item in top_stories %}
+            {% set art = item.article %}
+            <article class="top-card" style="--cat-color: {{ item.category_color }};">
+              <div class="top-card-media">
+                <img class="top-card-img" src="{{ art.image }}" alt="{{ art.title }}" loading="lazy" onerror="this.onerror=null; this.src='{{ art.fallback_image }}';">
+                <div class="top-cat-tag">
+                  <span class="top-cat-icon">{{ item.category_icon }}</span>
+                  <span class="top-cat-label">{{ item.category_title }}</span>
+                </div>
+                {% if art.is_top_story %}
+                  <span class="top-hero-tag">⭐ Noticia del Día</span>
+                {% endif %}
+              </div>
+              <div class="top-card-body">
+                <div class="top-impact-badge">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 14 14"/>
+                  </svg>
+                  <span><strong>Mayor Impacto:</strong> {{ art.category_top_reason }}</span>
+                </div>
+
+                <h3 class="top-card-title">
+                  <a href="{{ art.link }}" target="_blank" rel="noopener noreferrer">{{ art.title }}</a>
+                </h3>
+
+                <p class="top-card-summary">{{ art.summary }}</p>
+
+                <div class="top-card-footer">
+                  <div class="top-card-meta">
+                    <span class="top-source">{{ art.source }}</span>
+                    <span class="top-bullet">•</span>
+                    <span class="top-time">{{ art.published_label }}</span>
+                  </div>
+                  <div class="top-card-actions">
+                    <a href="#cat-{{ item.category_id }}" class="btn-top-jump" title="Ir a la sección {{ item.category_title }}">
+                      Ver sección
+                    </a>
+                    <a href="{{ art.link }}" target="_blank" rel="noopener noreferrer" class="btn-read" aria-label="Leer nota: {{ art.title }}">
+                      Leer nota
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
       {% for cat_id, cat in categories.items() %}
         <section id="cat-{{ cat_id }}" class="section-block">
           <div class="section-header">
