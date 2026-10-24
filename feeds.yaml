@@ -1,0 +1,138 @@
+﻿# feeds.yaml - Fuentes RSS organizadas por categorías y subtemas
+# Proyecto: daily-digest
+
+ultimo_minuto:
+  - name: "BBC Mundo"
+    url: "https://feeds.bbci.co.uk/mundo/rss.xml"
+  - name: "El País - Portada"
+    url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"
+  - name: "RTVE Noticias"
+    url: "https://api.rtve.es/api/noticias.rss"
+  - name: "El Universal - Minuto x Minuto"
+    url: "https://www.eluniversal.com.mx/arc/outboundfeeds/rss/?outputType=xml"
+  - name: "Aristegui Noticias"
+    url: "https://aristeguinoticias.com/feed/"
+
+tecnologia:
+  ia:
+    - name: "Xataka - Inteligencia Artificial"
+      url: "https://www.xataka.com/tag/inteligencia-artificial/rss2.xml"
+    - name: "Genbeta - IA"
+      url: "https://www.genbeta.com/tag/inteligencia-artificial/rss2.xml"
+    - name: "Hipertextual - Inteligencia Artificial"
+      url: "https://hipertextual.com/tag/inteligencia-artificial/feed"
+  hardware:
+    - name: "Xataka - Hardware"
+      url: "https://www.xataka.com/categoria/ordenadores/rss2.xml"
+    - name: "HardZone"
+      url: "https://hardzone.es/feed/"
+    - name: "Geeknetic"
+      url: "https://www.geeknetic.es/rss.xml"
+  ciberseguridad:
+    - name: "Hispasec - Una al día"
+      url: "https://unaaldia.hispasec.com/feed"
+    - name: "Genbeta - Seguridad"
+      url: "https://www.genbeta.com/categoria/seguridad/rss2.xml"
+    - name: "WeLiveSecurity ESET"
+      url: "https://www.welivesecurity.com/la-es/feed/"
+  programacion:
+    - name: "Genbeta - Desarrollo"
+      url: "https://www.genbeta.com/categoria/desarrollo/rss2.xml"
+    - name: "Dev.to en Español"
+      url: "https://dev.to/feed/tag/espanol"
+    - name: "Platzi Blog"
+      url: "https://platzi.com/blog/feed/"
+  gadgets:
+    - name: "Xataka - Dispositivos y Gadgets"
+      url: "https://www.xataka.com/categoria/dispositivos/rss2.xml"
+    - name: "El Androide Libre"
+      url: "https://feeds.feedburner.com/elandroidelibre"
+    - name: "Engadget en Español"
+      url: "https://es.engadget.com/rss.xml"
+  emergentes:
+    - name: "MIT Technology Review en Español"
+      url: "https://www.technologyreview.es/feed"
+    - name: "Xataka - Futuro e Innovación"
+      url: "https://www.xataka.com/tag/futuro/rss2.xml"
+
+economia:
+  - name: "El Economista México"
+    url: "https://www.eleconomista.com.mx/rss/eleconomista.xml"
+  - name: "Expansión México"
+    url: "https://expansion.mx/rss"
+  - name: "Cinco Días - Mercados"
+    url: "https://cincodias.elpais.com/seccion/rss/mercados/"
+  - name: "Forbes México"
+    url: "https://forbes.com.mx/feed/"
+
+sociedad:
+  - name: "El País - Sociedad"
+    url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada"
+  - name: "Animal Político"
+    url: "https://animalpolitico.com/feed"
+  - name: "BBC Mundo - América Latina"
+    url: "https://feeds.bbci.co.uk/mundo/temas/america_latina/rss.xml"
+  - name: "El Diario.es - Sociedad"
+    url: "https://www.eldiario.es/rss/sociedad/"
+
+local:
+  mexico:
+    - name: "El Universal - Nación"
+      url: "https://www.eluniversal.com.mx/arc/outboundfeeds/rss/category/nacion/?outputType=xml"
+    - name: "Proceso - Nacional"
+      url: "https://www.proceso.com.mx/rss/nacional.xml"
+    - name: "Aristegui Noticias"
+      url: "https://aristeguinoticias.com/feed/"
+  quintana_roo:
+    - name: "Noticaribe Quintana Roo"
+      url: "https://noticaribe.com.mx/feed/"
+    - name: "Por Esto! Quintana Roo"
+      url: "https://www.poresto.net/rss/quintana-roo/"
+    - name: "Quintana Roo Hoy"
+      url: "https://quintanaroohoy.com/feed/"
+  playa_del_carmen:
+    - name: "Noticaribe Playa del Carmen"
+      url: "https://noticaribe.com.mx/category/playa-del-carmen/feed/"
+    - name: "Quinta Fuerza Riviera Maya"
+      url: "https://quintafuerza.mx/feed/"
+    - name: "Playa Al Día"
+      url: "https://playaaldia.com/feed/"
+
+cultura_general:
+  politica:
+    - name: "Letras Libres - Política"
+      url: "https://letraslibres.com/feed/"
+    - name: "El País - Opinión"
+      url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/opinion/portada"
+  musica:
+    - name: "MondoSonoro"
+      url: "https://www.mondosonoro.com/feed/"
+    - name: "Jenesaispop"
+      url: "https://jenesaispop.com/feed/"
+  arte:
+    - name: "Hoyesarte"
+      url: "https://www.hoyesarte.com/feed/"
+    - name: "Cultura Inquieta"
+      url: "https://culturainquieta.com/feed/"
+  biologia:
+    - name: "National Geographic - Medio Ambiente"
+      url: "https://www.nationalgeographic.com.es/medio-ambiente/rss"
+    - name: "Agencia SINC - Medio Ambiente"
+      url: "https://www.agenciasinc.es/feed/medio-ambiente"
+  ciencia:
+    - name: "Agencia SINC - Ciencia"
+      url: "https://www.agenciasinc.es/feed/ciencia"
+    - name: "Materia - El País Ciencia"
+      url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada"
+    - name: "Muy Interesante"
+      url: "https://www.muyinteresante.com/feed/"
+  historia:
+    - name: "National Geographic Historia"
+      url: "https://historia.nationalgeographic.com.es/rss"
+    - name: "Desperta Ferro Ediciones"
+      url: "https://www.despertaferro-ediciones.com/feed/"
+  filosofia:
+    - name: "Filosofía&Co"
+      url: "https://filco.es/feed/"
+    - name: "Letras Libres - Filosofía"
+      url: "https://letraslibres.com/feed/"

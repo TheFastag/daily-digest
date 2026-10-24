@@ -1,0 +1,787 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }} | Daily Digest</title>
+  <meta name="description" content="Resumen diario de noticias en español: Último minuto, Tecnología, Economía, Sociedad, Local y Cultura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-surface: #111726;
+      --bg-surface-elevated: #172138;
+      --bg-card: rgba(22, 30, 49, 0.75);
+      --bg-card-hover: rgba(30, 42, 69, 0.9);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(99, 102, 241, 0.25);
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --accent-primary: #6366f1;
+      --accent-cyan: #06b6d4;
+      --accent-rose: #f43f5e;
+      --accent-amber: #f59e0b;
+      --accent-emerald: #10b981;
+      --accent-violet: #8b5cf6;
+      
+      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 20px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px -5px rgba(99, 102, 241, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      background-image: 
+        radial-gradient(ellipse at 15% 0%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 100%, rgba(244, 63, 94, 0.08) 0%, transparent 50%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Banner de Archivo si aplica */
+    .archive-banner {
+      background: linear-gradient(90deg, rgba(245, 158, 11, 0.15), rgba(244, 63, 94, 0.15));
+      border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 0.75rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .archive-banner a {
+      color: #fbbf24;
+      text-decoration: underline;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    /* Header Principal */
+    header.site-header {
+      padding: 2.5rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-cyan));
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+    .brand-icon svg {
+      width: 24px;
+      height: 24px;
+      color: white;
+    }
+
+    .brand-text h1 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+
+    .brand-text p {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-archive-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-full);
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .meta-stat {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Barra de navegación rápida por categorías */
+    .category-nav {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 0.75rem 0;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .category-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .nav-pill {
+      white-space: nowrap;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .nav-pill:hover, .nav-pill:focus {
+      color: #fff;
+      background: var(--bg-surface-elevated);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .nav-pill.pulse-pill {
+      color: #fca5a5;
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.4);
+    }
+
+    /* Secciones de Contenido */
+    main {
+      flex: 1;
+      padding: 2.5rem 0 4rem;
+    }
+
+    .section-block {
+      margin-bottom: 4rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .badge-count {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Estilo Especial para Último Minuto */
+    .urgent-pulse {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-rose);
+      box-shadow: 0 0 0 rgba(244, 63, 94, 0.7);
+      animation: pulse 1.8s infinite;
+      margin-right: 0.35rem;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.8); }
+      70% { box-shadow: 0 0 0 8px rgba(244, 63, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
+    }
+
+    /* Grilla de Tarjetas */
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .news-grid.grid-featured {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Tarjeta de Noticia */
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.25s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-glow);
+      background: var(--bg-card-hover);
+    }
+
+    /* Noticia del Día destacada */
+    .card.card-featured-day {
+      border: 1.5px solid rgba(245, 158, 11, 0.7);
+      box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.3);
+      background: linear-gradient(180deg, rgba(30, 42, 69, 0.95), rgba(22, 30, 49, 0.85));
+    }
+
+    .card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      background: var(--bg-surface);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-img {
+      transform: scale(1.04);
+    }
+
+    .card-badge-top {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      right: 0.75rem;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-top-story {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #0f172a;
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .badge-subtopic {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(6px);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-source {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(6px);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .badge-ai {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: rgba(99, 102, 241, 0.25);
+      backdrop-filter: blur(6px);
+      color: #c7d2fe;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      margin-left: auto;
+    }
+
+    .card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .top-story-reason {
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 3px solid #f59e0b;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      color: #fde68a;
+      border-radius: 4px;
+      margin-bottom: 0.85rem;
+      line-height: 1.45;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.015em;
+    }
+
+    .card-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .card-title a:hover {
+      color: #818cf8;
+    }
+
+    .card-summary {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.9rem;
+      margin-top: auto;
+    }
+
+    .card-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .btn-read {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(79, 70, 229, 0.9));
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-read:hover {
+      background: linear-gradient(135deg, #6366f1, #4338ca);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-read svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-read:hover svg {
+      transform: translateX(2px);
+    }
+
+    .empty-section {
+      background: var(--bg-surface);
+      border: 1px dashed var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Cierre: "Eso es todo por hoy" */
+    .closing-section {
+      background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.12), transparent 70%), var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 3rem 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .closing-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+
+    .closing-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .closing-text {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 580px;
+      margin: 0 auto 1.75rem;
+    }
+
+    .closing-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    footer.site-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 0;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+      background: var(--bg-surface);
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  {% if is_archive %}
+  <div class="archive-banner">
+    <span>📅 Estás viendo la edición histórica del <strong>{{ date_formatted }}</strong>.</span>
+    <a href="{{ home_url }}">Ir a la edición de hoy →</a>
+  </div>
+  {% endif %}
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <a href="{{ home_url }}" class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+              <path d="M18 14h-8"/>
+              <path d="M15 18h-5"/>
+              <path d="M10 6h8v4h-8V6Z"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1>Daily Digest</h1>
+            <p>Resumen diario de noticias curadas con IA</p>
+          </div>
+        </a>
+
+        <div class="header-actions">
+          <span class="date-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            {{ date_formatted }}
+          </span>
+          <a href="{{ archive_url }}" class="btn-archive-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+            Archivo
+          </a>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <div class="meta-stat">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Noticias recopiladas de las últimas 24 horas
+        </div>
+        <div class="meta-stat">
+          <strong>{{ total_articles }}</strong> notas seleccionadas hoy
+        </div>
+      </div>
+
+      <!-- Barra de navegación por categorías -->
+      <nav class="category-nav" aria-label="Navegación de secciones">
+        {% for cat_id, cat in categories.items() %}
+          {% if cat.articles %}
+            <a href="#cat-{{ cat_id }}" class="nav-pill {% if cat_id == 'ultimo_minuto' %}pulse-pill{% endif %}">
+              {% if cat_id == 'ultimo_minuto' %}<span class="urgent-pulse"></span>{% endif %}
+              {{ cat.title }} ({{ cat.articles|length }})
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {% for cat_id, cat in categories.items() %}
+        <section id="cat-{{ cat_id }}" class="section-block">
+          <div class="section-header">
+            <div class="section-title-wrap">
+              <span class="section-icon">{{ cat.icon }}</span>
+              <h2 class="section-title">
+                {% if cat_id == 'ultimo_minuto' %}
+                  <span class="urgent-pulse"></span>
+                {% endif %}
+                {{ cat.title }}
+              </h2>
+            </div>
+            <span class="badge-count">{{ cat.articles|length }} {{ 'nota' if cat.articles|length == 1 else 'notas' }}</span>
+          </div>
+
+          {% if cat.articles %}
+            <div class="news-grid {% if cat_id == 'ultimo_minuto' %}grid-featured{% endif %}">
+              {% for item in cat.articles %}
+                <article class="card {% if item.is_top_story %}card-featured-day{% endif %}">
+                  <div class="card-img-wrap">
+                    <img class="card-img" src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" onerror="this.onerror=null; this.src='{{ item.fallback_image }}';">
+                    <div class="card-badge-top">
+                      {% if item.is_top_story %}
+                        <span class="badge-top-story">⭐ Noticia del Día</span>
+                      {% endif %}
+                      {% if item.subtopic %}
+                        <span class="badge-subtopic">{{ item.subtopic_label }}</span>
+                      {% endif %}
+                      <span class="badge-source">{{ item.source }}</span>
+                      {% if item.summary_source == 'ai' %}
+                        <span class="badge-ai" title="Resumen generado con Google Gemini Flash">✨ IA</span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                    </h3>
+                    {% if item.top_story_reason %}
+                      <div class="top-story-reason">
+                        <strong>Por qué importa hoy:</strong> {{ item.top_story_reason }}
+                      </div>
+                    {% endif %}
+                    <p class="card-summary">{{ item.summary }}</p>
+                    <div class="card-footer">
+                      <span class="card-time">{{ item.published_label }}</span>
+                      <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="btn-read" aria-label="Leer nota: {{ item.title }}">
+                        Leer nota
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="empty-section">
+              <p>No se encontraron nuevas publicaciones en esta sección en las últimas 24 horas.</p>
+            </div>
+          {% endif %}
+        </section>
+      {% endfor %}
+
+      <!-- Cierre: Eso es todo por hoy -->
+      <section class="closing-section">
+        <span class="closing-badge">✨ Cobertura Diaria Completada</span>
+        <h2 class="closing-title">Eso es todo por hoy</h2>
+        <p class="closing-text">
+          Has completado el resumen con las noticias y análisis más relevantes de las últimas 24 horas. Vuelve mañana para una nueva edición curada.
+        </p>
+        <div class="closing-actions">
+          <a href="{{ archive_url }}" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+            Explorar Archivo Histórico
+          </a>
+          <a href="#" class="btn-secondary" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="19" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+            Volver arriba
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Daily Digest</strong> · Generado estáticamente con Python y Gemini Flash · Desplegado en Netlify.</p>
+      <p>Edición generada automáticamente el {{ date_formatted }}.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

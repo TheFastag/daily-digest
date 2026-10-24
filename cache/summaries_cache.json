@@ -1,0 +1,12 @@
+{
+  "https://example.com/quantum-news": {
+    "summary": "Avance cuántico fundamental.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:06:51.460534+00:00"
+  },
+  "https://example.com/satellite-launch": {
+    "summary": "Satélite lanzado satisfactoriamente.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:06:51.460534+00:00"
+  }
+}
