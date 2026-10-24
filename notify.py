@@ -27,6 +27,7 @@ load_dotenv(BASE_DIR / ".env")
 
 INDEX_HTML = BASE_DIR / "output" / "index.html"
 NTFY_API_URL = "https://ntfy.sh"
+DEFAULT_SITE_URL = "https://thefastag.github.io/daily-digest/"
 MAX_RETRIES = 1
 RETRY_DELAY = 3.0
 
@@ -142,14 +143,21 @@ def main():
     print("=" * 60, flush=True)
 
     ntfy_topic = os.getenv("NTFY_TOPIC", "").strip()
-    site_url = os.getenv("SITE_URL", "").strip()
+    raw_site_url = os.getenv("SITE_URL", "").strip()
+
+    # Si SITE_URL está vacío o contiene el placeholder de ejemplo 'tu-usuario',
+    # usar la URL real oficial de GitHub Pages de TheFastag
+    if not raw_site_url or "tu-usuario" in raw_site_url:
+        site_url = DEFAULT_SITE_URL
+    else:
+        site_url = raw_site_url
 
     if not ntfy_topic:
         print("[Aviso] NTFY_TOPIC no está configurado en las variables de entorno. Notificación omitida.", flush=True)
         sys.exit(0)
 
     print(f"[ntfy] Topic destino: {mask_secret(ntfy_topic)}", flush=True)
-    print(f"[ntfy] Enlace click (SITE_URL): {site_url if site_url else '[NO CONFIGURADO]'}", flush=True)
+    print(f"[ntfy] Enlace click (SITE_URL): {site_url}", flush=True)
 
     success, date_str, digest_summary = extract_digest_summary()
 

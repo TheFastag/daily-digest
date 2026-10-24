@@ -79,7 +79,7 @@ Para que la automatización en GitHub Actions funcione, agrega los siguientes **
 | :--- | :--- | :--- |
 | `GEMINI_API_KEY` | Tu clave de API gratuita de [Google AI Studio](https://aistudio.google.com/) | `AQ.Ab8RN6...` |
 | `NTFY_TOPIC` | Nombre único y privado para tu canal en [ntfy.sh](https://ntfy.sh) | `daily-digest-emp-7294` |
-| `SITE_URL` | URL donde está publicado tu digest (GitHub Pages o Netlify) | `https://tu-usuario.github.io/daily-digest/` |
+| `SITE_URL` | URL donde está publicado tu digest (GitHub Pages o Netlify) | `https://thefastag.github.io/daily-digest/` |
 
 > 🔒 **Seguridad**: Los scripts y el workflow nunca imprimen los valores de los secrets en los logs de consola.
 
@@ -144,3 +144,4 @@ Start-Process output\index.html
 
 ## 📄 Licencia
 Código abierto bajo licencia MIT.
+
