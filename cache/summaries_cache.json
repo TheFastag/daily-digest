@@ -158,5 +158,35 @@
     "summary": "Una carta de un lector dirigida al director advierte que en Europa no se deben normalizar las cargas policiales en protestas que erosionen la confianza pública. Asimismo, la correspondencia aborda diversos temas de contexto social y cultural, como el recuerdo de 'Operación Triunfo', la degradación de la educación pública y las obras en los almacenes del Museo del Prado.",
     "source": "ai",
     "timestamp": "2026-10-24T05:15:56.725356+00:00"
+  },
+  "https://elpais.com/sociedad/2026-10-23/la-precampana-se-calienta-a-costa-del-feminismo.html": {
+    "summary": "El líder del Partido Popular, Alberto Núñez Feijóo, ha anunciado su intención de revisar el derecho al aborto y suprimir el Ministerio de Igualdad si gana las elecciones. Tras estas declaraciones, se ha producido un intercambio de reproches entre Feijóo y Pedro Sánchez respecto a sus compromisos con la igualdad. La controversia marca la tensión política en el inicio de la precampaña electoral.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253292+00:00"
+  },
+  "https://elpais.com/sociedad/2026-10-23/consumo-alerta-de-la-presencia-de-listeria-en-unos-mejillones-cocidos-de-la-marca-marvalar.html": {
+    "summary": "El Ministerio de Consumo ha emitido una alerta tras detectar la presencia de listeria en mejillones cocidos de la marca Marvalmar. El lote afectado se ha distribuido en las comunidades de Madrid, Castilla-La Mancha y Castilla y León. Por el momento, las autoridades sanitarias no han registrado ningún caso de personas infectadas.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253334+00:00"
+  },
+  "https://elpais.com/educacion/2026-10-23/juristas-de-la-complutense-denuncian-graves-irregularidades-en-las-cargas-policiales-contra-los-manifestantes-de-la-huelga-educativa.html": {
+    "summary": "Profesores de la Facultad de Derecho de la Universidad Complutense han denunciado irregularidades en las cargas policiales durante la reciente huelga educativa. Los docentes han elaborado un informe técnico orientado a respaldar legalmente al comité de huelga. El documento servirá de base para interponer una demanda por presunta vulneración de derechos fundamentales.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253351+00:00"
+  },
+  "https://elpais.com/tecnologia/2026-10-23/el-furor-por-el-iphone-duo-llega-a-las-tiendas-horas-de-espera-para-adquirir-el-plegable-de-2300-euros-frente-a-los-acampados-de-sol.html": {
+    "summary": "Decenas de personas han soportado horas de espera frente a la tienda oficial de Apple en el centro de Madrid para adquirir el nuevo iPhone Duo. El modelo plegable de la marca ha salido al mercado por un precio de 2.300 euros. La gran expectación generada en el establecimiento ha coincidido con la presencia de acampados en la cercana Puerta del Sol.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253362+00:00"
+  },
+  "https://www.eldiario.es/sociedad/particulas-carga-electrica_1_13608713.html": {
+    "summary": "La carga eléctrica de una partícula determina el modo en que esta interacciona con el campo electromagnético. Aquellas partículas que poseen carga resultan sensibles a dicha fuerza física en el espacio. Esta propiedad es la que les permite experimentar fenómenos de atracción o repulsión con respecto a otras.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253371+00:00"
+  },
+  "https://www.eldiario.es/sociedad/miguel-angel-arco-franco-enviaba-alimentos-alemania-nazi-gente-moria-hambre_128_13607262.html": {
+    "summary": "El profesor de la Universidad de Granada Miguel Ángel del Arco ha sido galardonado con el Premio Nacional de Historia por sus investigaciones sobre la hambruna franquista. Su trabajo documenta la responsabilidad del régimen en dicho periodo de escasez extrema. Entre los hallazgos, el historiador revela que Franco envió suministros de alimentos a la Alemania nazi mientras la población española padecía hambre.",
+    "source": "ai",
+    "timestamp": "2026-10-24T05:36:44.253381+00:00"
   }
 }
