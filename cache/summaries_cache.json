@@ -733,5 +733,110 @@
     "summary": "Un análisis examina cómo las protestas e ideas de Mayo del 68 sentaron las bases del movimiento ecologista en Europa. Este fenómeno no solo impulsó la conciencia ambiental en el continente, sino que también propició la creación de los primeros partidos políticos verdes.",
     "source": "ai",
     "timestamp": "2026-10-28T17:59:03.844468+00:00"
+  },
+  "https://www.xataka.com/componentes/nvidia-esta-financiando-a-sus-proveedores-para-garantizar-que-podra-fabricar-todos-chips-ia-que-quiere-vender": {
+    "summary": "Nvidia ha experimentado un fuerte crecimiento en sus ingresos y beneficios netos impulsado por la alta demanda de chips de inteligencia artificial. Para asegurar el suministro de componentes necesario para responder al mercado, la empresa está financiando de forma directa a sus proveedores. Esta medida busca garantizar la capacidad de fabricación de sus productos clave.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663585+00:00"
+  },
+  "https://dev.to/vtsecurity/comandle-un-wordle-de-comandos-de-linux-que-se-juega-en-la-terminal-50m3": {
+    "summary": "Comandle es un juego diario inspirado en Wordle donde los usuarios deben adivinar comandos de Linux o de seguridad en seis intentos. Se puede jugar directamente desde la terminal o a través del navegador web utilizando un sistema de pistas por colores. La plataforma no requiere de un servidor central para seleccionar la palabra del día.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663623+00:00"
+  },
+  "https://www.xataka.com/ordenadores/primer-macbook-pantalla-oled-esta-aqui-que-se-queme-pantalla-seria-mi-ultima-preocupacion": {
+    "summary": "Apple ha presentado su primer modelo de MacBook equipado con pantalla OLED y soporte táctil. Esta incorporación responde a una demanda histórica de los usuarios de la marca. El nuevo panel busca mejorar la experiencia visual sin que el desgaste de la pantalla sea una problemática central.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663633+00:00"
+  },
+  "https://dev.to/leojulieta/crea-tu-propia-manga-pantalla-lavable-y-domina-el-mercado-2024-2027-p57": {
+    "summary": "Los dispositivos vestibles lavables fabricados con fibra electrónica y pantalla táctil están ganando presencia en laboratorios y empresas emergentes. Diversos prototipos recientes demuestran capacidad para resistir los procesos de lavado tradicionales. Las proyecciones del sector prevén un crecimiento relevante de este mercado entre 2024 y 2027.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663640+00:00"
+  },
+  "https://www.xataka.com/ordenadores/jobs-dijo-que-mac-tactil-no-funcionaba-ternus-dice-que-ahora-no-cuesta-nada-esa-diferencia-esta-nueva-apple": {
+    "summary": "A diferencia de la postura histórica de Steve Jobs, quien descartaba las pantallas táctiles en portátiles por cuestiones ergonómicas, la directiva actual de Apple ha adoptado una postura favorable hacia esta tecnología. La compañía justifica el cambio señalando la viabilidad actual de su integración. Esto refleja una evolución en la filosofía de diseño del fabricante.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663647+00:00"
+  },
+  "https://dev.to/leojulieta/evita-que-tus-chats-de-discord-aparezcan-en-google-45hg": {
+    "summary": "Diversos reportes han advertido que los mensajes de canales públicos en Discord están siendo indexados por el motor de búsqueda de Google. La situación ha provocado un incremento en las consultas de usuarios que buscan proteger la privacidad de sus conversaciones. Existen métodos de configuración para evitar que el contenido sea accesible públicamente en la web.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663653+00:00"
+  },
+  "https://www.xataka.com/ordenadores/ipad-ha-pasado-diez-anos-intentando-convertirse-mac-al-final-mac-quien-se-ha-quedado-unico-que-tenia-ipad": {
+    "summary": "Durante una década, el iPad buscó integrar funciones para aproximarse al rendimiento y uso de un ordenador Mac. Sin embargo, los desarrollos recientes muestran cómo la línea Mac ha adoptado la interacción táctil que caracterizaba a las tabletas. Este cambio redefine la convergencia entre ambas plataformas de Apple.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663658+00:00"
+  },
+  "https://dev.to/carlosp5751258lgtm/formularios-de-issues-en-github-deja-de-recibir-reportes-de-error-incompletos-1p8": {
+    "summary": "GitHub permite implementar formularios estructurados en formato YAML para la creación de reportes de errores en repositorios. Estos elementos sustituyen al campo de texto libre convencional para exigir información previa al usuario, como versiones o registros de sistema. Se alojan en la carpeta de plantillas del proyecto para estandarizar la recepción de incidencias.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663664+00:00"
+  },
+  "https://www.xataka.com/ordenadores/nuevo-macbook-pro-pantalla-tactil-cuesta-3-349-euros-espana-1-000-euros-que-su-hermano-no-tactil": {
+    "summary": "El nuevo MacBook Pro con pantalla táctil ha llegado al mercado español con un precio inicial de 3.349 euros. Esta cifra supone un incremento superior a los 1.000 euros respecto a las variantes que no incorporan panel táctil. La diferencia marca una clara segmentación de precio en la gama profesional de la marca.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663669+00:00"
+  },
+  "https://dev.to/carlosp5751258lgtm/crea-una-skill-de-claude-code-para-migraciones-de-base-de-datos-sin-sustos-3j95": {
+    "summary": "Los asistentes de código basados en inteligencia artificial pueden generar instrucciones de base de datos propensas a fallos en entornos de producción. Para solucionar este problema, es posible programar una habilidad personalizada en Claude Code que fuerce migraciones de esquema seguras. Esto evita interrupciones en el servicio durante el despliegue de aplicaciones.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663675+00:00"
+  },
+  "https://hardzone.es/ofertas/amazon/cargador-rapido-1026/": {
+    "summary": "Amazon ha aplicado una rebaja del 35% en un cargador ultrarrápido con una potencia de salida de 200W. El dispositivo está diseñado para recargar ordenadores portátiles, consolas y teléfonos móviles en pocos minutos. Representa una opción orientada a reducir los tiempos de espera frente a cargadores convencionales.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663680+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/ia-empieza-a-dejar-huella-paro-espanol-expuestos-programadores-disenadores": {
+    "summary": "Los primeros efectos de la adopción de la inteligencia artificial comienzan a reflejarse en las cifras de desempleo en España. Los perfiles técnicos relacionados con la programación y el diseño figuran entre los más expuestos a esta transformación tecnológica. Los analistas observan estas variaciones como las primeras señales de un cambio estructural en el mercado laboral.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:07:41.663685+00:00"
+  },
+  "https://www.eluniversal.com.mx/nacion/informe-y-gira-por-32-estados-marcan-agenda-de-la-presidenta/": {
+    "summary": "El reporte institucional de la Presidenta puso en primer plano los avances en seguridad, economía y programas sociales. La agenda incluyó una gira por 32 estados con la que se buscó vincular los compromisos nacionales con las problemáticas locales.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477902+00:00"
+  },
+  "https://www.eluniversal.com.mx/nacion/ine-registra-15-renuncias-de-cercanos-a-taddei/": {
+    "summary": "El INE ha registrado la renuncia de 15 colaboradores cercanos a la expresidenta del organismo. La consejera Blanca Cruz informó que se dará vista a las autoridades fiscalizadoras sobre cualquier irregularidad detectada durante dicha gestión.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477938+00:00"
+  },
+  "https://www.eluniversal.com.mx/nacion/firmas-de-clan-taddei-fingian-competencia/": {
+    "summary": "Se dio a conocer que empresas vinculadas al clan Taddei presuntamente simulaban competencia en procesos de contratación. El caso señala posibles irregularidades administrativas que requieren revisión.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477947+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/29/hanal-pixan-conserva-una-identidad-propia-en-la-zona-maya/": {
+    "summary": "La tradición del Hanal Pixán conserva su identidad y costumbres en la Zona Maya mediante la participación familiar. Autoridades del DIF en José María Morelos resaltaron el valor de preservar estas creencias transmitidas por generaciones.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477954+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/29/morelense-asegura-haber-visto-a-la-xtabay-durante-los-finados/": {
+    "summary": "Habitantes de la Zona Maya mantienen vivas las leyendas tradicionales durante las fechas de los finados. Un poblador de la región compartió su testimonio sobre la aparición de la Xtabay durante su infancia en Yucatán.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477960+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/29/anuncia-mara-lezama-plataforma-rec-digital-del-satq-para-tramites-rapidos-sencillos-y-directos/": {
+    "summary": "La gobernadora Mara Lezama anunció el lanzamiento de la plataforma REC Digital del SATQ en Quintana Roo. La herramienta permitirá realizar trámites fiscales de manera rápida, directa y sin necesidad de hacer filas desde el próximo lunes 16.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477965+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/28/gobierno-de-playa-del-carmen-fortalece-coordinacion-con-fonatur-marina-y-gobierno-del-estado-para-atender-el-sargazo/": {
+    "summary": "El municipio de Playa del Carmen y Fonatur acordaron unificar los sistemas de monitoreo y alerta ante la llegada de sargazo. En coordinación con la Marina y el gobierno estatal, proyectan anticipar las labores de recolección para 2027.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477971+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/28/gobierno-de-playa-del-carmen-acerca-servicios-del-sat-a-la-ciudadania-playense-a-traves-de-oficina-movil/": {
+    "summary": "Una oficina móvil del SAT fue desplegada en Playa del Carmen para acercar los trámites fiscales a los ciudadanos. La alcaldesa Estefanía Mercado destacó que la medida brinda orientación personalizada y reduce traslados a la población.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477977+00:00"
+  },
+  "https://noticaribe.com.mx/2026/10/28/piden-regularizacion-de-las-torres-de-playa-del-carmen/": {
+    "summary": "Colectivos de Playa del Carmen solicitaron al Gobierno Federal retirar el cableado de alta tensión de la CFE en la zona 'Las Torres'. El objetivo de la petición es avanzar hacia la regularización de más de 13 asentamientos informales.",
+    "source": "ai",
+    "timestamp": "2026-10-29T18:10:27.477984+00:00"
   }
 }
