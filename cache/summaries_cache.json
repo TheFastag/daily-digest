@@ -1708,5 +1708,110 @@
     "summary": "El sociólogo e investigador del CSIC Héctor Cebolla participó en 'El salón de Gascón' para debatir sobre el mito del ascensor social. Durante la intervención, el experto analizó también el fenómeno de la fecundidad frustrada y los principales retos demográficos a los que se enfrenta España.",
     "source": "ai",
     "timestamp": "2026-11-04T19:28:32.919994+00:00"
+  },
+  "https://www.xataka.com/componentes/ia-esta-amenazando-cartuchos-nintendo": {
+    "summary": "La compañía taiwanesa Macronix es uno de los mayores fabricantes globales de memorias no volátiles para dispositivos como los cartuchos de juego de Nintendo. Sin embargo, el aumento desmedido de la demanda de chips orientados a la inteligencia artificial está generando fuertes tensiones en la cadena de producción. Este contexto pone en riesgo la estabilidad del suministro de memorias tradicionales para la industria del videojuego.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069515+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/apple-quiere-que-siri-ia-este-todas-partes-al-tiempo-limita-a-200-dolares-gasto-tokens-para-sus-empleados": {
+    "summary": "Apple busca expandir la presencia de Siri con inteligencia artificial en todo su ecosistema de dispositivos para fomentar su uso cotidiano. Al mismo tiempo, la compañía ha establecido un límite de 200 dólares en el consumo de tokens para sus propios empleados. Esta medida refleja un intento de equilibrar sus ambiciones tecnológicas con un estricto control de costes operativos internos.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069552+00:00"
+  },
+  "https://www.xataka.com/analisis/macbook-pro-m6-analisis-portatil-estupendo-que-exige-responder-dos-preguntas-antes-comprarlo": {
+    "summary": "El análisis de la nueva gama MacBook Pro evalúa el rendimiento del procesador M6 frente a sus versiones superiores como el M5 Pro. A pesar de ser un portátil de gran calidad, la disposición del catálogo de Apple puede generar confusión respecto a la potencia real de cada modelo. Por ello, los compradores deben analizar cuidadosamente sus necesidades concretas de uso antes de adquirirlo.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069560+00:00"
+  },
+  "https://www.xataka.com/videojuegos/anthropic-toma-medidas-drasticas-clones-videojuegos-ia-hechos-claude-esta-ver-que-sirva-para-algo": {
+    "summary": "La empresa Anthropic ha comenzado a tomar medidas drásticas para evitar la proliferación de clones de videojuegos generados mediante su modelo de IA Claude. La creciente adopción de herramientas de inteligencia artificial en la creación de software ha acelerado este tipo de desarrollos no autorizados. Con estas acciones, la firma busca regular el uso indebido de su tecnología en la industria del entretenimiento digital.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069567+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/amd-va-a-adelantar-a-intel-primera-vez-su-historia": {
+    "summary": "AMD está a punto de superar a Intel en ingresos por primera vez en su historia, rompiendo con décadas de dominio de este último en el sector. En los últimos cinco años, la compañía liderada por su actual directiva ha experimentado un crecimiento financiero sostenido. Este acontecimiento representa un giro histórico decisivo en la competitividad dentro de la industria de los procesadores.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069572+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/escuelas-eeuu-quieren-google-ia-se-enfrentan-a-dilema-aceptan-sus-resumenes-ia-se-quedan-buscador": {
+    "summary": "Varias escuelas en Estados Unidos han expresado su rechazo a los resúmenes automáticos con IA en las búsquedas de Google. Sin embargo, los centros educativos enfrentan el dilema de aceptar esta función o arriesgarse a perder el acceso al buscador en sus aulas. La controversia pone de manifiesto la difícil convivencia entre las políticas educativas y la integración forzada de IA por parte de las grandes tecnológicas.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069577+00:00"
+  },
+  "https://hardzone.es/noticias/juegos/discord-version-rust-290-ram/": {
+    "summary": "Discord anunció la renovación más importante de su historia orientada a reducir drásticamente el uso de recursos del sistema. La plataforma promete optimizar su consumo de memoria RAM para situarlo en tan solo 290 MB durante su funcionamiento. Esta actualización busca responder a las continuas peticiones de la comunidad de usuarios, especialmente en el ámbito de los videojuegos.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069582+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/no-todos-tokens-que-producen-modelos-valen-dario-amodei-sugiere-modelo-precios-dinamicos-funcion-tarea": {
+    "summary": "El CEO de Anthropic, Dario Amodei, señaló que el valor de los tokens procesados por los modelos de lenguaje no es homogéneo y depende del contexto de su generación. Sus declaraciones coinciden con la presentación de informes financieros clave de la empresa en su camino hacia la salida a bolsa. Estas palabras abren el debate sobre cómo debe medirse la eficiencia y el coste real de la infraestructura en IA.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069592+00:00"
+  },
+  "https://hardzone.es/noticias/juegos/zelda-ocarina-time-remake-pc-emulador-lichii/": {
+    "summary": "Diversos usuarios han logrado ejecutar una versión adaptada de Zelda Ocarina of Time Remake en PC mediante el uso del emulador Lichii. Pese a haber sido lanzado recientemente, las primeras pruebas de rendimiento en ordenador muestran resultados visuales satisfactorios. Este hecho destaca la rapidez con la que la comunidad de emulación logra adaptar títulos recién estrenados.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069601+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/tencent-acaba-lanzar-nueva-ia-interesante-no-solo-que-sabe-hacer-sino-que-ha-decidido-no-ensenarle": {
+    "summary": "Tencent ha diseñado un nuevo modelo de inteligencia artificial que introduce límites estrictos en su etapa de entrenamiento. La estrategia busca acotar ciertos conocimientos para evitar que la tecnología pueda ser utilizada con fines perjudiciales. Este enfoque novedoso pretende priorizar la seguridad e integridad del modelo por encima de la acumulación sin restricciones de capacidades.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069608+00:00"
+  },
+  "https://hardzone.es/noticias/equipos/nintendo-switch-subira-precio-2027/": {
+    "summary": "Nintendo ha tranquilizado a los usuarios al confirmar que la Switch 2 no sufrirá un incremento en su precio de venta al público. Además, la compañía aseguró contar con un suministro de memorias suficiente para cubrir la demanda proyectada hasta 2027. Estas afirmaciones alejan la incertidumbre sobre posibles subidas de coste derivadas de la escasez de componentes.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069614+00:00"
+  },
+  "https://www.genbeta.com/actualidad/centros-datos-ia-generan-su-propia-energia-como-afecta-esto-a-red-electrica-general": {
+    "summary": "Las principales empresas de tecnología están empezando a producir su propia energía para abastecer los centros de datos dedicados a la inteligencia artificial. Esta estrategia busca mitigar la sobrecarga de la infraestructura eléctrica convencional ante el aumento desmedido del consumo energético. Sin embargo, surgen dudas sobre las consecuencias a largo plazo que esta práctica tendrá en la red eléctrica global.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:14.069621+00:00"
+  },
+  "https://expansion.mx/economia/2026/11/05/banco-de-mexico-sorprende-y-recorta-su-tasa-de-interes-a-6-25": {
+    "summary": "La Junta de Gobierno del Banco de México acordó reducir la tasa de interés de referencia para ubicarla en 6.25%. La determinación se tomó mediante una votación dividida de 3 a 2 entre sus miembros. Este ajuste busca adaptar la postura monetaria ante el panorama económico actual.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789829+00:00"
+  },
+  "https://expansion.mx/mundo/2026/11/05/santiago-pena-renuncia-presidencia-paraguay-ueno-bank": {
+    "summary": "El presidente de Paraguay, Santiago Peña, dimitió a su cargo tras el descontento generado por el congelamiento de depósitos bancarios. La situación provocó fuertes protestas sociales, señalamientos de favoritismo vinculados a Ueno Bank y un quiebre con el oficialismo en el Congreso. La crisis financiera detonó así un cambio drástico en la conducción política del país.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789864+00:00"
+  },
+  "https://expansion.mx/economia/2026/11/05/ley-de-economia-digital-los-riesgos-que-enfrentaran-los-usuarios-con-mas-pagos-con-qr-y-transferencias": {
+    "summary": "La implementación de la Ley de Economía Digital busca desincentivar el uso de dinero en efectivo mediante el impulso de transacciones electrónicas. Sin embargo, el incremento en el uso de pagos con código QR y transferencias expone a los usuarios a posibles fraudes o equivocaciones operativas. Por esta razón, se enfatiza la necesidad de adoptar mayores precauciones al realizar operaciones cotidianas.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789871+00:00"
+  },
+  "https://expansion.mx/tecnologia/2026/11/05/ia-pedir-uber-agentes-inteligencia-artificial": {
+    "summary": "Uber informó que las funciones que permiten a la inteligencia artificial solicitar servicios tuvieron un uso mínimo, registrando apenas cuatro viajes y 500 pedidos de comida en un periodo de alta demanda. En México, la adopción de estas herramientas aún enfrenta diversas restricciones técnicas y de disponibilidad. La baja interacción refleja que los usuarios todavía no aprovechan esta tecnología dentro de la plataforma.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789878+00:00"
+  },
+  "https://expansion.mx/empresas/2026/11/05/jetour-t2-4x4-suv-llega-mexico-precio": {
+    "summary": "La marca automotriz china Jetour amplió su catálogo en México al presentar la versión híbrida enchufable con tracción integral de su SUV T2 4x4. Con un precio inferior a un millón de pesos, la empresa busca disputarle mercado al modelo Ford Bronco en el segmento todoterreno. Esta apuesta representa una estrategia clave para consolidar su presencia en el sector automotriz local.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789882+00:00"
+  },
+  "https://expansion.mx/tecnologia/2026/11/05/resena-legend-of-zelda-ocarina-of-time-es-mejor-gta-6": {
+    "summary": "Una reseña sobre el clásico de Nintendo, Ocarina of Time, resalta su capacidad para equilibrar la nostalgia con mejoras modernas. El título promete brindar horas de entretenimiento a los seguidores de la franquicia Zelda mediante sus mecánicas actualizadas. Además, el análisis contrapone el atractivo de esta entrega frente a lanzamientos de gran escala como GTA VI.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:37:26.789888+00:00"
+  },
+  "https://jenesaispop.com/2026/11/05/533436/hidrogenesse-variaciones-pombo/": {
+    "summary": "El texto aborda la publicación en 2007 del último álbum del grupo Astrud, titulado 'Tú no existes'. Este nombre rinde homenaje a un poema de Álvaro Pombo perteneciente a su obra 'Variaciones' de 1977, el cual estaba impreso en el libreto del disco.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:38:00.528805+00:00"
+  },
+  "https://elpais.com/opinion/2026-11-05/una-lectora-que-se-vaya-puente-no-explica-que-fallo-en-las-vias-ni-garantiza-que-no-vuelva-a-pasar.html": {
+    "summary": "La sección de cartas al director incluye la opinión de una lectora sobre la renuncia del ministro de Transportes, advirtiendo que su salida no explica las fallas ferroviarias. Además, la correspondencia trata asuntos sobre la acampada en Sol y ciberataques a supermercados.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:38:00.528839+00:00"
+  },
+  "https://culturainquieta.com/arte/fotografia/las-imagenes-ganadoras-del-certamen-world-press-photo-2026/": {
+    "summary": "Se han publicado las fotografías galardonadas en el certamen World Press Photo 2026. La selección de este año ofrece un retrato de la realidad caracterizado por el contraste entre lo bello y lo devastador.",
+    "source": "ai",
+    "timestamp": "2026-11-05T19:38:00.528846+00:00"
   }
 }
