@@ -2513,5 +2513,80 @@
     "summary": "Xiaomi ha rebajado el precio de su patinete Electric Scooter 4 Lite a 150 euros para fomentar la movilidad urbana. El dispositivo ofrece una potencia máxima de 500 W, una velocidad de hasta 25 km/h y una autonomía de 25 km.",
     "source": "ai",
     "timestamp": "2026-11-09T22:02:10.637430+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/quien-alice-huang-exdirectiva-megaspeed-que-ha-puesto-cuerdas-a-jensen-huang-nvidia": {
+    "summary": "Alice Huang, exdirectiva de Megaspeed, ha puesto en una situación complicada al director ejecutivo de Nvidia, Jensen Huang. Este conflicto sitúa al máximo responsable de la compañía tecnológica en una posición delicada dentro de la industria.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718509+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/anthropic-ha-descubierto-que-mi-madre-sabia-cuidas-mejor-cosas-cuando-crees-que-tuyas-a-su-ia-le-pasa-codigo": {
+    "summary": "Anthropic ha realizado hallazgos sobre el comportamiento de la inteligencia artificial en la gestión de recursos. Los análisis sugieren que los modelos optimizan el cuidado de ciertos elementos cuando operan bajo una percepción de propiedad sobre ellos.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718546+00:00"
+  },
+  "https://www.xataka.com/empresas-y-economia/nvidia-pierde-190-000-millones-dolares-bolsa-sus-accionistas-llevan-a-jensen-huang-tribunales": {
+    "summary": "El bufete Rosen Law Firm ha presentado una demanda colectiva contra Nvidia y su CEO, Jensen Huang, ante un tribunal federal de California. La acción judicial coincide con una severa caída bursátil en la que la compañía ha perdido 190.000 millones de dólares.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718557+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/google-tuvo-mejor-modelo-ia-durante-trece-dias-anthropic-se-quito-respuesta-ha-tardado-24-horas": {
+    "summary": "La competencia en el sector de la inteligencia artificial se intensifica con un rápido intercambio de liderazgo entre grandes tecnológicas. Anthropic superó la posición de Google en pocos días, lo que provocó una respuesta de la firma de Mountain View en apenas 24 horas.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718564+00:00"
+  },
+  "https://hardzone.es/noticias/equipos/nvidia-rtx-spark-dlss-ray-tracing-windows-arm/": {
+    "summary": "NVIDIA ha presentado la plataforma RTX Spark, concebida para reunir capacidades de trabajo, creación de contenido, ejecución de IA y videojuegos en un mismo portátil. El sistema integra tecnologías como DLSS, Ray Tracing y compatibilidad con Windows sobre ARM.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718570+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/pulsar-no-vuelvas-a-preguntar-claude-code-parecia-inofensivo-ha-acabado-filtrando-miles-contrasenas-github": {
+    "summary": "El uso de la opción de automatización de confirmaciones en Claude Code ha provocado la filtración de miles de credenciales confidenciales en GitHub. La omisión sistemática de advertencias de seguridad derivó en la exposición no deseada de datos sensibles.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718576+00:00"
+  },
+  "https://hardzone.es/ofertas/pc-componentes/juegos-ps5-1126/": {
+    "summary": "PcComponentes ha puesto en marcha ofertas previas a la campaña de Black Friday centradas en el catálogo de videojuegos físicos. La plataforma dispone de descuentos superiores al 60% en una selección de diez títulos para PlayStation 5.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718587+00:00"
+  },
+  "https://www.xataka.com/componentes/google-no-quiere-solo-chip-ia-que-haga-todo-lanza-dos-nuevas-tpu-especializadas-para-plantar-cara-a-nvidia": {
+    "summary": "Google ha presentado dos nuevas unidades de procesamiento tensorial (TPU) especializadas para competir directamente contra el hardware de Nvidia. La empresa abandona el enfoque de un chip único para apostar por componentes dedicados a tareas específicas de IA.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718596+00:00"
+  },
+  "https://hardzone.es/noticias/juegos/resident-evil-veronica-finales-2027/": {
+    "summary": "El estreno del videojuego Resident Evil Veronica podría posponerse hasta el otoño del año 2027. Según informaciones recientes, Capcom busca disponer de un margen temporal mayor para pulir el desarrollo antes del lanzamiento oficial.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718605+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/startup-paga-20-dolares-hora-pasear-perros-robot": {
+    "summary": "Una startup con sede en San Francisco ha comenzado a contratar personas por 20 dólares la hora para pasear perros robóticos por las calles. La iniciativa busca evaluar la integración y el funcionamiento de estos dispositivos autónomos en entornos urbanos.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718613+00:00"
+  },
+  "https://hardzone.es/noticias/juegos/gta-vi-precargar-trailer-pssr-ray-tracing/": {
+    "summary": "La precarga digital de GTA VI ha quedado habilitada con un peso de almacenamiento de 212 GB para quienes reservaron el título. Un nuevo tráiler confirma además la presencia de mejoras específicas para PlayStation 5 Pro con el objetivo de alcanzar los 30 FPS.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718622+00:00"
+  },
+  "https://www.xataka.com/robotica-e-ia/anthropic-acaba-lanzar-sus-dos-modelos-ia-avanzados-uno-tendra-acceso-general-otro-estara-restringido": {
+    "summary": "Anthropic ha anunciado el lanzamiento de sus dos modelos de inteligencia artificial más potentes hasta la fecha. La compañía ha dispuesto que uno de ellos esté disponible para el público general, mientras que el otro mantendrá un acceso restringido.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:24:55.718631+00:00"
+  },
+  "https://muyinteresante.okdiario.com/ciencia/hielo-superionico-neptuno-nueva-estructura.html": {
+    "summary": "Un grupo de científicos ha descubierto una nueva estructura de hielo superiónico capaz de existir a miles de grados de temperatura. Este hallazgo permite explicar por qué el agua podría comportarse de manera diferente en el interior del planeta Neptuno.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:26:06.124608+00:00"
+  },
+  "https://elpais.com/opinion/2026-11-10/los-movimientos-sociales-para-el-bien-comun.html": {
+    "summary": "Diversos movimientos sociales exigen la reconstrucción del Estado social para promover el bien común. Ante esta tendencia, se señala que el progresismo europeo debe prestar atención a los mensajes que surgen en las calles desde distintos espectros políticos.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:26:06.124646+00:00"
+  },
+  "https://filco.es/marta-martinez-el-lenguaje-y-el-duelo/": {
+    "summary": "La obra «El lenguaje es otro cuando alguien muere», de Marta Martínez Rodríguez, analiza cómo el duelo se ha transformado en un proceso privado marcado por las exigencias de la productividad. El libro propone la escritura como un ritual para acompañar la pérdida y cuestionar el uso del lenguaje ante la enfermedad.",
+    "source": "ai",
+    "timestamp": "2026-11-10T19:26:06.124655+00:00"
   }
 }
